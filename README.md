@@ -1,4 +1,4 @@
-Contents
+**Contents**
 1. Chapter 1- Introduction . . . .. . . . . . . . . . . . . .. . . . . . . . . . . .1
 
 1.1 Description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1	
@@ -106,18 +106,18 @@ Contents
 
 
  
-Chapter 1
+**Chapter 1**
 
 
-Introduction
+**Introduction**
 
 
 
-1.1	Description 
+**1.1	Description **
 
 This project is based on applying Reinforcement learning algorithm to predict the action such as buy, hold or close on everyday stock data. Based on the action taken there will be certain profit or loss generated. The goal is to maximize the returns of a stock for the next year. The model will be implemented on 5 different stocks and the end goal is to maximize the sum of the return of each stock for profit.
 
-1.2 Variables and Data
+**1.2 Variables and Data**
 
 The Data used for the project is historical data taken from NSE website.10  stocks from large cap and 5 stocks from mid cap. 4 years data 2016-2019 is taken.
 
@@ -149,18 +149,18 @@ List of variables in the Data.
 
 
 
-Chapter 2
+**Chapter 2**
 
 
-Stock selection Analysis
+**Stock selection Analysis**
 
 
 
-2.1 Scope
+**2.1 Scope**
 
 For our reinforcement algorithm we need stock data .Here we have selected 10 large cap stocks and 5 mid cap stocks .Out of the 10 large cap stocks we select 4 stocks and from 5 mid cap stocks we select 1 stock for a good portfolio. Although the objective of this project is not portfolio management we need to select the appropriate stocks for a good return. We are looking for stocks which are stable and have less volatility so that the model can fit well. Hence we have chosen Large cap and mid cap as the category to pick our stocks.
 
-2.2 Methodology
+**2.2 Methodology**
 
 There are various methods available in the market for stock selection. However following parameters are used for analysis and selection.
 •	P/E ratio
@@ -189,7 +189,7 @@ There are various methods available in the market for stock selection. However f
 
 
  
-2.2.1 P/E ratio:
+**2.2.1 P/E ratio:**
 
 PE ratio means the price investor is paying for every 1 rupee earning of the company.The lower the PE ratio the better.
 
@@ -238,7 +238,7 @@ Following the same analysis as above Indiabulls and Yes bank seems to be potenti
 
 
 
-2.2.2 52 week low:
+**2.2.2 52 week low:**
 
 The 52 week low and high usually acts as a support and resistance. There would have been some negative news about the stock which causes its price to fall and make a new low. Vice versa for it’s 52 week high which most probably could be due to some positive news
 
@@ -283,7 +283,7 @@ Bharat Heavy electricals and steel Authority of India had its current stock pric
 
 
 
-2.2.3 Interest Coverage Ratio:
+**2.2.3 Interest Coverage Ratio:**
 
 This is very important when it comes to stock picking. If ICR is strong, more often than not, the stock turns out to be really good. ICR usually means the companies ability to pay off it’s interest ( repayment of interest on loan taken) obligations. More the better. A company can fulfill it’s interest obligations provided it has good earnings before interest and taxes .
 Sales - Cost = EBIT - Interest = EBT - Tax = PAT
@@ -338,7 +338,7 @@ Although Bharat heavy had a drastic drop in 2016 it had upward trend after 2016.
 
 
 
-2.2.4 ROE/ROCE:
+**2.2.4 ROE/ROCE:**
 
 Return on equity means return earned by the company on the capital contributed by equity shareholders alone. Higher the better. This also gives an idea about how well is the money of equity shareholder is utilized by the company.
 
@@ -388,7 +388,7 @@ IndiaBulls topped the chart in Midcap, while Oil India had good ROCE and ROE as 
 
 
 
-2.2.5  PBV ratio:
+**2.2.5  PBV ratio:**
 
 Book value is nothing but the shareholders worth in the company. On the liability side of the balance sheet, you will see equity share capital and reserves. If you add up equity share capital and reserves, it is nothing but the shareholders worth in the company. So book value = shareholders money ( capital contributed by them + money transferred to reserves out of profits )
 
@@ -418,13 +418,13 @@ All the stocks had PBV value less than 3, but stocks such as Steel Authority of 
 
 
 
-2.3 Result
+**2.3 Result**
 
 Based on the above analysis SBI ,ITC, ONGC, Sunpharma were selected from the large cap and 
 IndiaBulls Housing Finance Ltd was selected from mid cap.
 
 
-2.4 Conclusion
+**2.4 Conclusion**
 
 TCS was also a good candidate but a higher priority was given to PE ratio and 52 week low since the goal of the project was to maximize the return in one year using the long strategy.
 
@@ -441,24 +441,24 @@ TCS was also a good candidate but a higher priority was given to PE ratio and 52
 
 
 
-Chapter 3
+**Chapter 3**
 
 
 Deep Q-learning Vs Policy Gradient
 
 
 
-3.1 Scope
+**3.1 Scope**
 
 There are many algorithms in reinforcement learning among which the popular ones most suitable for finance are Deep Q-learning and Policy Gradient. In this section both the algorithms were tested on random stock Karnataka bank and compared for better returns in a span of 200 days.
 
 
-3.2 Methodology
+**3.2 Methodology**
 
 This problem statement is to compare the two models without any hyperparameter tuning and evaluation to see which gave better results.
 
 
-3.2.1 Deep Q-learning
+**3.2.1 Deep Q-learning**
 
 Q-learning is an off policy reinforcement learning algorithm that seeks to find the best action to take given the current state. It’s considered off-policy because the q-learning function learns from actions that are outside the current policy, like taking random actions, and therefore a policy isn’t needed. More specifically, q-learning seeks to learn a policy that maximizes the total reward 
  ![](images/11.png)
@@ -475,7 +475,7 @@ Initial Money given to the DQL agent was 10k and the model was trained for a per
  
 
 
-3.2.2 Policy Gradient:
+**3.2.2 Policy Gradient:**
 
 Policy gradient methods are a type of reinforcement learning techniques that rely upon optimizing parametrized policies with respect to the expected return (long-term cumulative reward) by gradient descent. They do not suffer from many of the problems that have been marring traditional reinforcement learning approaches such as the lack of guarantees of a value function, the intractability problem resulting from uncertain state information and the complexity arising from continuous states & actions.
 
@@ -507,19 +507,19 @@ We see that the investment is positive 0.56% more than the initial money given t
 
 
 
-3.3 Data and Variable
+**3.3 Data and Variable**
 
 Karnataka bank csv data was used. Both models were trained on data from 2017-2018 and predicted for 200 days in 2019.The only variable used was close price which was transformed by differencing.
 
 
-3.4 Results
+**3.4 Results**
 
 Initial Investment : 		10000
 Test data: 			200 days
 DQL Prediction Returns:  	-139.2999
 PG Prediction Returns:  	56.55
 
-3.5 Conclusion
+**3.5 Conclusion**
 
 The PG model is clearly outperforming the DQ model although its performance could be improved with hyperparameter tunning but due to time constraint the baseline models were considered.
 
@@ -553,18 +553,18 @@ The PG model is clearly outperforming the DQ model although its performance coul
 
 
 
-Chapter 4
+**Chapter 4**
 
 
 Policy Gradient implementation and Evaluation
 
 
 
-4.1 Scope
+**4.1 Scope**
 
 In this section we explore the optimum model conditions to maximize the returns.
 
-4.2 Methodology
+**4.2 Methodology**
 
 The model was trained on SBI stock which was selected at random and fine tuned. The model was tested for different settings in order to find out the optimum performance.
 
@@ -630,7 +630,7 @@ Since 4 years data was too much and didn’t perform well on the other stocks pa
  ![](images/21.png)
 Close variable was selected since it gave consistent returns.
 
-4.3 Result
+**4.3 Result**
 
 Final Model settings :
 •	Number of epochs : 50
@@ -660,18 +660,18 @@ Final Model settings :
 
 
 
-Chapter 5
+**Chapter 5**
 
 
 Multi Agent Policy Gradient
 
 
 
-5.1 Scope
+**5.1 Scope**
 
 Since the final model was selected now it was time to implement the final model on all the 5 stocks
 
-5.2 Methodology
+**5.2 Methodology**
 
 Finally the model was implemented on the following stocks and the returns for a year  was computed.
 
@@ -783,7 +783,7 @@ Total investment 131.45%
 
 
 
-5.3	Results
+**5.3	Results**
 
 For every stock there is one agent so we have 5 agents i.e 5 models. Every agent was given 10k initial, so total of 50k was invested. Below is the overall assessment of multiagent system.
 
@@ -792,7 +792,7 @@ For every stock there is one agent so we have 5 agents i.e 5 models. Every agent
 
 In the above Picture there are two graphs the above graph is the cash at hand at given point in time of individual agent.The below graph is the total cash at hand out of 50k at given point. The graph below shows a  downward trend initially which reaches its lowest around March-April, this indicates two possibilities that either the agent is investing a lot of money buying stocks and holding them or the agent is losing money by  making bad decisions. But eventually post April sees an upward trend and closing at 51,123 making a profit of 1123 .
 
-5.4	Conclusion
+**5.4	Conclusion**
 
 Given the restriction on agents to trade just single unit at a time the profit earned was commendable. There is a lot of scope for improvement with this model and in future its potential can be explored for better returns. RL algorithms are in its early stage of development as compared to ML and DL so these models will keep improving until it outperforms the other models.
 
@@ -805,7 +805,7 @@ Given the restriction on agents to trade just single unit at a time the profit e
 
 
 
-References
+**References**
 
 
 [1] Sutton and Barto : Reinforcement learning: An Introduction.
