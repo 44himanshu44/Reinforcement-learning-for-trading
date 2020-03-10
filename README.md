@@ -1,4 +1,4 @@
-#**Contents**#
+# Contents
 1. Chapter 1- Introduction . . . .. . . . . . . . . . . . . .. . . . . . . . . . . .1
 
 1.1 Description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .1	
@@ -106,10 +106,10 @@
 
 
  
-**Chapter 1**
+# Chapter 1
 
 
-**Introduction**
+## Introduction
 
 
 
@@ -149,10 +149,10 @@ List of variables in the Data.
 
 
 
-**Chapter 2**
+# Chapter 2
 
 
-**Stock selection Analysis**
+## Stock selection Analysis
 
 
 
@@ -441,10 +441,10 @@ TCS was also a good candidate but a higher priority was given to PE ratio and 52
 
 
 
-**Chapter 3**
+# Chapter 3
 
 
-Deep Q-learning Vs Policy Gradient
+## Deep Q-learning Vs Policy Gradient
 
 
 
@@ -553,10 +553,10 @@ The PG model is clearly outperforming the DQ model although its performance coul
 
 
 
-**Chapter 4**
+# Chapter 4
 
 
-Policy Gradient implementation and Evaluation
+## Policy Gradient implementation and Evaluation
 
 
 
@@ -660,10 +660,10 @@ Final Model settings :
 
 
 
-**Chapter 5**
+# Chapter 5
 
 
-Multi Agent Policy Gradient
+## Multi Agent Policy Gradient
 
 
 
@@ -805,7 +805,7 @@ Given the restriction on agents to trade just single unit at a time the profit e
 
 
 
-**References**
+# References
 
 
 [1] Sutton and Barto : Reinforcement learning: An Introduction.
