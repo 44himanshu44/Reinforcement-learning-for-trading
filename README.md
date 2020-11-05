@@ -113,7 +113,7 @@
 
 
 
-**1.1	Description **
+**1.1	Description**
 
 This project is based on applying Reinforcement learning algorithm to predict the action such as buy, hold or close on everyday stock data. Based on the action taken there will be certain profit or loss generated. The goal is to maximize the returns of a stock for the next year. The model will be implemented on 5 different stocks and the end goal is to maximize the sum of the return of each stock for profit.
 
